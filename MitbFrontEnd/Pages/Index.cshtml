@@ -1,0 +1,88 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="jumbotron">
+    <div class="text-center">
+        <h1 class="display-3 text-white" 
+            style="text-shadow: 2px 2px #000000; 
+            font-weight: 400;">Welcome!</h1>
+        <p class="lead">
+            <span class="display-3 text-danger"
+                  style="font-weight: 400; text-shadow: 2px 2px #000000;">534</span>
+            <span class="text-black"
+                  style="font-weight: 500;">
+                <br />Messages are now floating in the ocean, captured in bottles.
+                <br />
+                Take a chance and find what's been wondering around for a while.
+            </span>
+        </p>
+    </div>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="~/img/testCardImg.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This  with supporting text below as a natural lead-in to additional content. </p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    @*<blockquote class="blockquote text-center">
+            <p class="mb-0">This is a random message wich is visible only after a user (doesnt mather if its logged on or not) clicks the GET MESSAGE button</p>
+            <footer class="blockquote-footer">
+                Someone from <cite title="Source Title">name of country that the message originates from</cite>. <br />
+                Only registered users can answer message from a bottle!
+            </footer>
+        </blockquote>*@
+    <div class="text-center">
+        <p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">GET MESSAGE</a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>
+            <span class="h2">M</span><span class="h5">essage</span>
+            <span class="h2">I</span><span class="h5">n</span>
+            <span class="h2">T</span><span class="h5">he</span>
+            <span class="h2">B</span><span class="h5">ottle</span>
+        </p>
+        <p>
+            Is a place where you can share your thoughts using messages caprured in our virtual bottles. Register now and meet new people in an extraordinary way.
+        </p>
+
+        <a class="btn btn-success text-white" asp-page="Registration">Register new profile</a><br />
+    </div>
+    <div class="col-md-6">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <a class="text-info">Forgotten password?</a>
+        </form>
+    </div>
+</div>

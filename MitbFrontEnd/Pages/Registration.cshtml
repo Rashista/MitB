@@ -1,0 +1,40 @@
+﻿@page
+@model MitbFrontEnd.Pages.RegistrationModel
+@{
+}
+
+<h2>Registration form</h2>
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">First Name</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Last Name</label>
+            <input type="password" class="form-control" id="inputPassword4">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="inputState">Country</label>
+            <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>

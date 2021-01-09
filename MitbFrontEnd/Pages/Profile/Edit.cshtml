@@ -1,0 +1,115 @@
+﻿@page
+@model MitbFrontEnd.Pages.Profile.EditModel
+@{
+}
+
+<partial name="_ProfileHeadNavPartial" />
+
+<!-- begin profile-content -->
+<div class="profile-content">
+    <!-- begin tab-content -->
+    <div class="tab-content p-0">
+
+        <!-- begin #profile-about tab -->
+        <div class="tab-pane fade in active show" id="profile-about">
+            <!-- begin table -->
+            <div class="table-responsive">
+                <table class="table table-profile">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <h4>Jordan Rashkov<small>Bulgaria, 30</small></h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight">
+                            <td class="field">Profile picture</td>
+                            <td><a asp-page="./ProfilePicChange" class="btn btn-primary">Change</a></td>
+                        </tr>
+                        <tr class="highlight">
+                            <td class="field">Mood</td>
+                            <td>Mood Message</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td class="field">About Me</td>
+                            <td>Description</td>
+                        </tr>
+                        <tr class="divider">
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td class="field">Country/Region</td>
+                            <td>
+                                <select class="form-control input-inline input-xs" name="region">
+                                    <option value="US" selected="">United State</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AS">American Samoa</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AI">Anguilla</option>
+                                    <option value="AQ">Antarctica</option>
+                                    <option value="AG">Antigua and Barbuda</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="field">Website</td>
+                            <td>Webpage</td>
+                        </tr>
+                        <tr>
+                            <td class="field">Gender</td>
+                            <td>
+                                <select class="form-control input-inline input-xs" name="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="field">Birthdate</td>
+                            <td>
+                                <select class="form-control input-inline input-xs" name="day">
+                                    <option value="04" selected="">04</option>
+                                </select>
+                                -
+                                <select class="form-control input-inline input-xs" name="month">
+                                    <option value="11" selected="">11</option>
+                                </select>
+                                -
+                                <select class="form-control input-inline input-xs" name="year">
+                                    <option value="1989" selected="">1989</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="field">Language</td>
+                            <td>
+                                <select class="form-control input-inline input-xs" name="language">
+                                    <option value="" selected="">English</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="divider">
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr class="highlight">
+                            <td class="field">&nbsp;</td>
+                            <td class="p-t-10 p-b-10">
+                                <button type="submit" class="btn btn-primary width-150">Update</button>
+                                <button type="submit" class="btn btn-white btn-white-without-border width-150 m-l-5">Cancel</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end table -->
+        </div>
+        <!-- end #profile-about tab -->
+    </div>
+    <!-- end tab-content -->
+</div>
+<!-- end profile-content -->
