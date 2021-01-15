@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\MitB\\MitbFrontEnd\\MitbFrontEnd.csproj": {}
+    "E:\\C#\\MitB Dating App\\MitbFrontEnd\\MitbFrontEnd.csproj": {}
   },
   "projects": {
-    "E:\\C#\\MitB\\MitbFrontEnd\\MitbFrontEnd.csproj": {
+    "E:\\C#\\MitB Dating App\\MitbFrontEnd\\MitbFrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\MitB\\MitbFrontEnd\\MitbFrontEnd.csproj",
+        "projectUniqueName": "E:\\C#\\MitB Dating App\\MitbFrontEnd\\MitbFrontEnd.csproj",
         "projectName": "MitbFrontEnd",
-        "projectPath": "E:\\C#\\MitB\\MitbFrontEnd\\MitbFrontEnd.csproj",
+        "projectPath": "E:\\C#\\MitB Dating App\\MitbFrontEnd\\MitbFrontEnd.csproj",
         "packagesPath": "C:\\Users\\Yordan Rashkov\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\MitB\\MitbFrontEnd\\obj\\",
+        "outputPath": "E:\\C#\\MitB Dating App\\MitbFrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yordan Rashkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
