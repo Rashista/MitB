@@ -8,19 +8,23 @@
 <br />
 
 <form asp-page="./Index" method="get">
-    <div class="form-actions no-color">
-        <p>
-            Find by name:
-            <input type="text" name="SearchString" value="Model.CurrentFilter" />
-            <input type="submit" value="Search" class="btn btn-primary" /> 
-            <a type="button" class="btn btn-secondary"asp-page="./Index">Back to full List</a> 
-            <a type="button" class="btn btn-success" asp-page="Create">Create New</a>
-        </p>
+    <div class="row">
+        <div class="col">
+            <div class="form-actions no-color">
+                <p>
+                    Find by name:
+                    <input type="text" name="SearchString" value="Model.CurrentFilter" />
+                    <input type="submit" value="Search" class="btn btn-primary" />
+                    <a type="button" class="btn btn-secondary" asp-page="./Index">Back to full List</a>
+                    <a type="button" class="btn btn-success" asp-page="Create">Create New</a>
+                </p>
+            </div>
+        </div>
     </div>
 </form>
 
-<table class="table">
-    <thead>
+<table class="table table-hover">
+    <thead class="thead-dark">
         <tr>
             <th>
                 <a asp-page="./Index" asp-route-sortOrder="Model.NameSort"
@@ -45,7 +49,7 @@
     </thead>
     <tbody>
         @*@foreach (var item in Model.Students)
-            {*@
+        {*@
         <tr>
             <td>
                 @*@Html.DisplayFor(modelItem => item.LastName)*@
@@ -60,9 +64,29 @@
                 2016-09-01
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="item.ID">Delete</a>
+                <a type="button" class="btn btn-warning" asp-page="./Edit" asp-route-id="item.ID">Edit</a>
+                <a type="button" class="btn btn-info" asp-page="./Details" asp-route-id="item.ID">Details</a>
+                <a type="button" class="btn btn-danger" asp-page="./Delete" asp-route-id="item.ID">Delete</a>
+            </td>
+        </tr>
+        @* This next trow must be deleted when enabling backend *@
+        <tr>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.LastName)*@
+                Some name
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.FirstMidName)*@
+                Some short description
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.EnrollmentDate)*@
+                2016-09-01
+            </td>
+            <td>
+                <a type="button" class="btn btn-warning" asp-page="./Edit" asp-route-id="item.ID">Edit</a>
+                <a type="button" class="btn btn-info" asp-page="./Details" asp-route-id="item.ID">Details</a>
+                <a type="button" class="btn btn-danger" asp-page="./Delete" asp-route-id="item.ID">Delete</a>
             </td>
         </tr>
         @*}*@
